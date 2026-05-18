@@ -55,3 +55,49 @@ Five new features are created from the remaining pre-sale decision variables:
 `Is_Promoted` collapses the seven-level promotion type into a binary flag. The important distinction for profitability is whether any promotion was active, not which specific type it was.
 
 `Is_Q4` flags orders from the fourth quarter. EDA showed a visible profit lift in Q4 relative to other quarters, likely driven by seasonal demand.
+
+---
+
+## How to Run Locally
+
+Clone the repository and place the raw dataset at `data/fmcg_sales_marketing_profitability_2023_2025.csv`.
+
+Create and activate a virtual environment, then install the package:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+Create all required directories:
+
+```
+python setup_dirs.py
+```
+
+Run the full training pipeline:
+
+```
+make train
+```
+
+Or equivalently:
+
+```
+python -m src.pipeline.train_pipeline --data data/fmcg_sales_marketing_profitability_2023_2025.csv
+```
+
+Launch the Streamlit prediction UI:
+
+```
+make app
+```
+
+Open the notebook for the full exploratory walkthrough:
+
+```
+jupyter notebook notebook/fmcg_profit_prediction.ipynb
+```
+
+Artifacts are written to `artifacts/` and logs to `logs/`. Both directories are excluded from version control.
