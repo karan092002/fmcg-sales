@@ -1,6 +1,4 @@
-artifacts/
 logs/
-data/
 __pycache__/
 *.pyc
 *.pyo

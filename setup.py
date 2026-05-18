@@ -4,7 +4,7 @@ setup(
     name="fmcg-profit-predictor",
     version="0.1.0",
     description="ML pipeline for predicting order-level profit across FMCG sales data",
-    author="",
+    author="Karan",
     packages=find_packages(),
     install_requires=[
         "pandas>=2.0",

@@ -1,12 +1,3 @@
-"""
-app.py
-------
-Streamlit UI for FMCG order profit prediction.
-
-Run with:
-    streamlit run app.py
-"""
-
 import streamlit as st
 
 from src.pipeline.predict_pipeline import PredictInput, PredictPipeline
