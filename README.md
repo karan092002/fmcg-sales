@@ -2,6 +2,7 @@
 
 An end-to-end data analytics project covering 18,240 FMCG order transactions across five regions and five product categories from 2023 to 2025. The analysis combines SQL-based reporting, a Power BI dashboard, and a machine learning model to understand what drives order-level profitability and predict it before an order is confirmed.
 
+Live app: https://fmcg-sales.streamlit.app/
 ---
 
 ## Business Questions Answered
