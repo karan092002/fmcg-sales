@@ -79,6 +79,3 @@ Five new features were created from pre-sale variables that would be known befor
 `Is_Promoted` collapses seven promotion categories into a binary flag. The meaningful distinction for profitability is whether any promotion was active, not which type.
 
 `Is_Q4` flags orders from the fourth quarter. Q4 orders averaged slightly higher profit ($185) than the rest of the year, likely reflecting seasonal demand effects.
-
----
-r. For the Power BI report, follow the instructions in `sql_powerbi/powerbi/POWERBI_SETUP.md`.
